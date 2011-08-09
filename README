@@ -1,0 +1,21 @@
+/**********************************************************************
+ * Developer:   Ezra Velazquez http://ezraezraezra.com
+ * Company:     TokBox         http://www.tokbox.com
+ * 
+ * Date:        July 2011
+ *
+ * Title:       LoopTube       http://looptube.opentok.com
+ * Description: Video chat while watching synced videos.
+ *              Synched videos are stopped and replaced with a live
+ *              video feed when an artist turns on his/her camera
+ *
+ * Tech:        AJAX, CSS, CSS3, HTML, JavaScript, JSON, jQuery, 
+ *              MySQL, Node.js, OpenTok API, PHP, Socket.io, YouTube API
+ * Last Update: August 9th, 2011
+ ***********************************************************************/
+ 
+ NOTE: *** 3rd PARTY LIBRARIES HAVE BEEN OMITTED FROM THE PUBLIC REPO ***
+ 
+ Libaries Omitted:  OpenTok     http://www.tokbox.com
+                    Socket.io   http://socket.io
+                    jQuery      http://jquery.com

@@ -1,0 +1,257 @@
+@CHARSET "UTF-8";
+/*
+ * Project:     LoopTube
+ * Description: Watch synced videos together with the option of having
+ *              a live video feed of an artist show up.
+ * Website:     http://looptube.opentok.com
+ * 
+ * Author:      Ezra Velazquez
+ * Website:     http://ezraezraezra.com
+ * Date:        July 2011
+ * 
+ */
+@font-face {
+	font-family: Folksolid-webfont; src: url('../assets/Folksolid-webfont.ttf');
+}
+#audience_container {
+	width: 1000px;
+	height: 430px;
+	-webkit-background-size: 50px 50px;
+	background-size: 50px 50px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+.audience_member {
+	width: 140px;
+	height: 170px;
+	background-color: transparent;
+	position: relative;
+	float: left;
+	margin-left:25px;
+	margin-bottom: 25px;
+	visibility: hidden;
+}
+.audience_head {
+	width: 140px;
+	height: 120px;
+	position: relative;
+	float: left;
+	background-color: transparent;
+}	
+#back_button {
+	position: absolute;
+	margin-top: 314px;
+	margin-left: 20px;
+	background-color: red;
+	width: 120px;
+	height: 45px;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+	line-height: 18px;
+	padding-top:10px;
+	-moz-transform:rotate(-7deg);
+	-webkit-transform:rotate(-7deg);
+	transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-webkit-transition: background-color 1s;
+}
+#back_button_pole {
+	position: absolute;
+	margin-top:368px;
+	margin-left: 82px;
+	width: 5px;
+	height: 93px;
+	background-color: red;
+}
+#back_button:hover {
+	background-color: grey;
+}
+.band_link {
+	color: white;
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #EDEDA9;
+	text-align: center;
+	font-family: Folksolid-webfont;
+}
+#button_confirm {
+	position: relative;
+	background-color: black;
+	color: white;
+	font-family: Folksolid-webfont;
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 10px;
+	width: 140px;
+	height: 40px;
+	margin-top: 10px;
+}
+#button_participate {
+	margin-right:100px;
+	float:right;
+}
+#button_view {
+	margin-left:100px;
+}
+.checkered {
+	background-color: #F90;
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent), 
+					-webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent), 
+					-webkit-linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, .2) 75%), 
+					-webkit-linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, .2) 75%);
+}
+#concert_container {
+	position: relative;
+	width: 1000px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+	
+#driverplayer {
+	width: 480px;
+	height: 303px;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+#smb_holder {
+	position: absolute;
+	margin-top: 314px;
+	margin-left: 860px;
+	background-color: red;
+	width: 120px;
+	height: 45px;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+	padding-top:10px;
+	-moz-transform:rotate(7deg);
+	-webkit-transform:rotate(7deg);
+	text-align:center;
+	padding-bottom:10px;
+}
+#smb_pole {
+	position: absolute;
+	margin-top: 368px;
+	margin-left: 917px;
+	background-color: red;
+	width: 5px;
+	height: 93px;	
+}
+#stage_container {
+	position: relative;
+	width: 1000px;
+	height: 480px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}	
+#stage_feed {
+	width: 640px;
+	height: 390px;
+	background-color: black;
+	margin: 15px;
+	margin-bottom: 0px;
+	margin-top: 30px;
+	float: left;
+}	
+#stage_floor {
+	width: 750px;
+	height: 30px;
+	background-color: #333;
+	position: absolute;
+	margin-left: 120px;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 420px;
+	z-index:10px;
+	font-family: Folksolid-webfont;
+	font-size: 24px;
+	color: white;
+	padding-top: 10px;
+}
+.stage_speakers {
+	width: 165px;
+	height: 450px;
+	background-color: white;
+	float: left;
+	background-image: url('../assets/speakers.png');
+}	
+.start_button {
+	width: 160px;
+	height: 45px;
+	background-color: red;
+	text-align: center;
+	color: white;
+	font-size: 24px;
+	font-family: Folksolid-webfont;
+	float: left;
+	padding-top: 10px;
+	margin-top: 150px;
+	cursor: pointer;
+	line-height: 18px;
+	transition: background-color 1s;
+	-moz-transition: background-color 1s; /* Firefox 4 */
+	-webkit-transition: background-color 1s;
+}
+.start_button:hover {
+	background-color: grey;
+}
+#user_camera_container {
+	position: absolute;
+	z-index: 560;
+	width: 400px;
+	height: 300px;
+	background-color:transparent;
+	margin-left: 300px;
+	margin-right: 300px;
+	margin-top:450px;
+	padding-top: 30px;
+	display: none;
+}
+#user_camera_container_backdrop {
+	position: absolute;
+	z-index: 500;
+	width: 1000px;
+	height: 390px;
+	background-color: black;
+	margin-top:480px;
+	display: none;
+	opacity: 0.5;
+}
+#user_member {
+	z-index: 60;
+	visibility: hidden;
+	cursor: pointer;
+	font-size:48px;
+	background-color: transparent;
+	color: white;		
+}
+#user_member_button {
+	z-index: 60;
+	visibility: hidden;
+	cursor: pointer;
+	font-size:48px;
+	background-color: #302E25;
+	color: white;	
+}
+#twitter_buttom {
+	position:relative; 
+	margin-top: 5px; 
+	margin-left:auto;
+	margin-right:auto;
+}
+#ytapiplayer {
+	display: none;
+}
