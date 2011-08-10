@@ -6,7 +6,7 @@
  *
  * Title:       LoopTube       http://looptube.opentok.com
  * Description: Video chat while watching synced videos.
- *              Synched videos are stopped and replaced with a live
+ *              Synced videos are stopped and replaced with a live
  *              video feed when an artist turns on his/her camera
  *
  * Tech:        AJAX, CSS, CSS3, HTML, JavaScript, JSON, jQuery, 
@@ -16,6 +16,6 @@
  
  NOTE: *** 3rd PARTY LIBRARIES HAVE BEEN OMITTED FROM THE PUBLIC REPO ***
  
- Libaries Omitted:  OpenTok     http://www.tokbox.com
-                    Socket.io   http://socket.io
-                    jQuery      http://jquery.com
+ Libraries Omitted:  OpenTok     http://www.tokbox.com
+                     Socket.io   http://socket.io
+                     jQuery      http://jquery.com
